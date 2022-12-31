@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box; 
+	font-family: 'Karla', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    background-color:tomato;
+    width: 100%;
+    height: 10vh;
+    color: black;
+    box-shadow: 0px 0px 10px 5px rgba(225, 75, 6, 0.4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-items{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 18px;
+}
+.nav-items > li{
+    transition: 0.3s ease all;
+    cursor: pointer;
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+}
+.nav-items > li:hover{
+    -webkit-transform: scale(1.1);
+    background-color: whitesmoke;
+}
+
+.nav-items-hl{
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+}
+
+.nav-Btn{
+    background-color: tomato;
+    border: none;
+    cursor: pointer;
+}
+.nav-Btn > img{
+    width: 35px;
+    transition: transform 0.3s ease-in;
+}
+
+.logoImg{
+    width: 90px;
+}
+.drop-down-menu-techs{
+    list-style-type: none;
+    color: whi;
+    margin: 10px 0px;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+.drop-down-menu-techs > h4{
+    font-size: 18px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+.drop-down-menu-techs > li{
+    background-color: aliceblue;
+    margin: 10px 10px;
+    padding: 3px 0px;
+}
+
+.drop-down-menu-about{
+    position: absolute;
+    bottom: 10px;
+    list-style-type: none;
+    border-top: 2px solid white;
+    width: 90%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+}
+.drop-down-menu-about > li{
+    background-color: whitesmoke;
+    padding: .3rem;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.nav-menu-list{
+    display: none;
+    width: 250px;
+    height: 50vh;
+    background-color: tomato;
+    position: absolute;
+    right: 5%;
+    margin-top: 2px;
+    transition: 0.3s ease-in-out all;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-menu-list{
+        width: 100%;
+        right: 0%;
+    }
+    .nav-items{
+        display: none;
+    }
+}
